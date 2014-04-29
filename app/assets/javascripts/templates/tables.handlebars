@@ -1,9 +1,9 @@
-<h1>Tables</h1>
 
 <div class="col-md-3">
+  <h1>Tables</h1>
   <div class="tables">
     {{#each table in controller}}
-      {{#link-to 'items' class='btn btn-warning btn-large'}}{{table.id}}{{/link-to}}
+      {{#link-to 'table' table class='btn btn-warning btn-large'}}{{table.id}}{{/link-to}}
     {{/each}}
   </div>
 
