@@ -1,0 +1,7 @@
+<h1>Items</h1>
+
+<ul>
+  {{#each item in controller}}
+    <li>{{item.description}}: ${{item.price}}</li>
+  {{/each}}
+</ul>
