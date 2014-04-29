@@ -1,7 +1,10 @@
-<h1>Menu</h1>
+<h1>Add food to Table: {{controllers.table.id}}</h1>
 
 <ul>
-  {{#each item in controller}}
-    <li>{{item.description}}: ${{item.price}}</li>
+  {{#each item in controller }}
+    <button {{action addItem item }}
+            class="btn btn-success btn-xs">
+            Add {{item.description}}
+    </button>
   {{/each}}
 </ul>

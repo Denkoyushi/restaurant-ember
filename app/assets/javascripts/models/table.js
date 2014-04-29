@@ -1,5 +1,5 @@
 Restaurant.Table = DS.Model.extend({
-  items: DS.hasMany('item')
+  items: DS.hasMany('item', {async: true})
 });
 
 Restaurant.Table.FIXTURES = [

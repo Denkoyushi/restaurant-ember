@@ -1,6 +1,8 @@
 <h1>Food for Table {{id}}</h1>
 
 {{#link-to 'items'}}Place Orders{{/link-to}}
-
+{{#each item in model.items}}
+  <p>{{item.description}}</p>
+{{/each}}
 {{outlet}}
 

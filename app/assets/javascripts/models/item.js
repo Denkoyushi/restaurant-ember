@@ -1,7 +1,7 @@
 Restaurant.Item = DS.Model.extend({
   description: DS.attr(),
   price: DS.attr('number'),
-  tables: DS.hasMany('table')
+  tables: DS.hasMany('table', {async: true})
 });
 
 Restaurant.Item.FIXTURES = [
